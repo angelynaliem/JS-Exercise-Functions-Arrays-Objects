@@ -88,7 +88,7 @@ function temperatureInF(temperature, unit) {
   }
 }
 
-console.log(88,"F");
+console.log(24,"C");
 
 
 /**
@@ -107,9 +107,11 @@ console.log(88,"F");
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  console.log("id: " + id + ",\nname: " + name + ",\nemail: " + email);
 }
+
+makePersonObject(5, "Leia", "leia@leia.com");
 
 /**
  * ### Challenge `getName`
