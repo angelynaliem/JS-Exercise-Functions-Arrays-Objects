@@ -149,9 +149,25 @@ getName({id: 1, name: 'Leia', email: 'leia@leia.com'});
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(array) {
+const apple = array.indexOf("apple"); 
+console.log(apple);
 }
+
+appleIndex(['orange', 'grape', 'apple', 'banana', 'mango']);
+
+
+function appleIndex(array) {
+  
+  for (let i = 0; i < array.length; i++) {
+     if (array[i] === "apple") {
+       console.log([i]);
+     }
+    }
+  }
+
+appleIndex(['orange', 'grape', 'apple', 'banana', 'mango']);
+
 
 /**
  * ### Challenge `isItAnApple`
@@ -225,8 +241,8 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(inventory, index) {
-  /* code here */
+function getCarInfoByIndex(/* code here */) {
+/* code here */
 }
 
 /**
