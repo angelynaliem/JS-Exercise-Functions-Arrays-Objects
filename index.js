@@ -249,9 +249,13 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(/* code here */) {
-/* code here */
+function getCarInfoByIndex(inventory, index) {
+if (inventory = inventory[index]) {
+console.log("This is a " + inventory.car_make + inventory.car_model);
 }
+}
+
+getCarInfoByIndex(inventory, 0);
 
 /**
  * ### Challenge `getLastCarInfo`
