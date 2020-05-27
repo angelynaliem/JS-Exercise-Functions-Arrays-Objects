@@ -284,9 +284,12 @@ getLastCarInfo(inventory);
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
 function getModelYears(inventory) {
+  let newInventory = [];
   for (let i = 0; i < inventory.length; i++) {
-    let newInventory = [];
-    newInventory = newInventory.push(inventory.car_year[i]);
+    let carYear = {};
+    carYear.car_year = inventory[i].car_year;
+    newInventory.push(carYear);
+      carYear = {};
   }
   console.log(newInventory);
 }
